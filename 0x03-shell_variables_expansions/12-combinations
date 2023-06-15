@@ -1,11 +1,3 @@
 #!/bin/bash
-letters=("a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z")
+printf {a..z}{a..z}\ | tr -d 'o ' | grep -v oo
 
-for letter1 in "${letters[@]}"; do
-    for letter2 in "${letters[@]}"; do
-        combination="${letter1}${letter2}"
-        if [ "$combination" != "oo" ]; then
-            echo "$combination"
-        fi
-    done
-done
