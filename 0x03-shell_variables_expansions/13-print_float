@@ -1,2 +1,2 @@
 #!/bin/bash
-pritnf "%.2f" &NUM | sort
+pritnf "%.2f" $NUM | sort
